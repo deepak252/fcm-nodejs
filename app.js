@@ -12,10 +12,10 @@ const message = {
     "to": "/topics/meetings"
 };
 
-// setInterval(() => {
-//     console.log("Sending Notification...");
-//     sendNotification();  
-// }, 10000);
+setInterval(() => {
+    console.log("Sending Notification...");
+    sendNotification();  
+}, 60000);
 
 app.get("/",(req,res)=>{
     
