@@ -15,8 +15,8 @@ const message = {
 setInterval(() => {
     console.log("Sending Notification...");
     sendNotification();  
-}, 1800000);
-
+}, 20000);
+// 1800000
 app.get("/",(req,res)=>{
     
     // sendNotification();
