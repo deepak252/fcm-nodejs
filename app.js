@@ -12,10 +12,10 @@ const message = {
     "to": "/topics/meetings"
 };
 
-setInterval(() => {
-    console.log("Sending Notification...");
-    sendNotification();  
-}, 10000);
+// setInterval(() => {
+//     console.log("Sending Notification...");
+//     sendNotification();  
+// }, 10000);
 
 app.get("/",(req,res)=>{
     
@@ -23,8 +23,9 @@ app.get("/",(req,res)=>{
     res.send("Thanks for using app");
 });
 
-app.listen(8000,()=>{
-    console.log("Server is up and running on port: 8000");
+var port = process.env.PORT || 3000;
+app.listen(port,()=>{
+    console.log(`Server is up and running on port: ${port}`);
 })
 
 
