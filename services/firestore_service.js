@@ -45,13 +45,13 @@ class FirestoreService{
     
 }
 
-async function crud() {
-    // await FirestoreService.addMeeting({topic: "Meet5"});
-    console.log(await FirestoreService.fetchMeetings());
+// async function crud() {
+//     // await FirestoreService.addMeeting({topic: "Meet5"});
+//     console.log(await FirestoreService.fetchMeetings());
     
-    // await FirestoreService.deleteMeeting({topic: "Meet5"});
-    console.log("Done");
-}
-crud();
+//     // await FirestoreService.deleteMeeting({topic: "Meet5"});
+//     console.log("Done");
+// }
+// crud();
 
 module.exports = FirestoreService
