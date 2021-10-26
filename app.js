@@ -18,7 +18,6 @@ setInterval(() => {
 }, 3600000);
 // 1800000
 app.get("/",(req,res)=>{
-    
     // sendNotification();
     res.send("Thanks for using app");
 });
