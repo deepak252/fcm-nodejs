@@ -3,7 +3,7 @@ const cheerio = require("cheerio");
 
 class WpMeetingService{
     static fetchMeetings() {
-        console.log("WpMeetingService fetchingMeetings...");
+        // console.log("WpMeetingService fetchingMeetings...");
         return new Promise((resolve,reject)=>{
             axios({
                 url: "https://treecampus.dgtlmart.com/wp-json/wp/v2/posts/16545",

@@ -5,7 +5,7 @@ const Meeting = db.collection("Meetings");
 
 class FirestoreService{
     static async  fetchMeetings() {
-        console.log("FirestoreService fetchingMeetings...");
+        // console.log("FirestoreService fetchingMeetings...");
         const snapshot = await Meeting.get();
         const ids = snapshot.docs.map((doc) => doc.id);
         // const dataList = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
