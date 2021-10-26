@@ -13,7 +13,7 @@ var wp_meetings = [];
 var firestore_meetings = [];
 
 setInterval(async () => {
-    console.log("Starting app2...");
+    console.log("Checking changes...");
 
     wp_meetings = await WpMeetingService.fetchMeetings();
     firestore_meetings = await FirestoreService.fetchMeetings();
